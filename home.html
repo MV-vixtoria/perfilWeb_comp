@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/logo.png">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grafstyle.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="./img/logo.png" class="img"><div class="logo">PERFIL</div>
+            <nav>
+                <ul>
+                    <li>
+                        <span><b>D</b></span>
+                        
+                        <span><b>A</b></span>
+                        
+                        <span><b>S</b></span>
+                        
+                        <span><b>H</b></span>
+                        
+                        <span><b>B</b></span>
+                        
+                        <span><b>O</b></span>
+                        
+                        <span><b>A</b></span>
+                        
+                        <span><b>R</b></span>
+                        
+                        <span><b>D</b></span>
+                    </li>
+                </ul>                
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="widgets">
+                <div class="widget">
+                    <h3>Usuários</h3>
+                    <canvas id="usersChart"></canvas>
+                    
+                </div>
+                <div class="widget">
+                    <h3>Botão de Pânico</h3>
+                    <canvas id="panicButtonChart"></canvas>
+                    
+                </div>
+                <div class="widget feedback">
+                    <h3>Feedback</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Usuário</th>
+                                <th>Mensagem</th>
+                                <th>Status</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feedbackTable">
+                            <!-- Dados dinâmicos -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="widget">
+                    <h3>Horários Mais Perigosos</h3>
+                    <canvas id="dangerousTimesChart"></canvas>
+                    <div class="body">
+                            <div class="chart-container">
+                                <canvas id="myPieChart" width="400" height="400"></canvas>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+    <script src="grafscript.js"></script>
+</body>
+</html>
